@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-dotenv.config({ quite : true});
+dotenv.config();
 
 
 export const ENV = {
