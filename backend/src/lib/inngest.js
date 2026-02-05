@@ -28,7 +28,7 @@ const syncUser = inngest.createFunction(
     //   image: newUser.profileImage,
     // });
 
-    return { success: true, userId: id };
+    
   }
 );
 
@@ -43,7 +43,7 @@ const deleteUserFromDB = inngest.createFunction(
 
     // await deleteStreamUser(id.toString());
 
-    return { success: true, deletedUserId: id };
+    
   }
 );
 
