@@ -27,6 +27,8 @@ const syncUser = inngest.createFunction(
     //   name: newUser.name,
     //   image: newUser.profileImage,
     // });
+
+    return { success: true, userId: id };
   }
 );
 
@@ -40,6 +42,8 @@ const deleteUserFromDB = inngest.createFunction(
     await User.deleteOne({ clerkId: id });
 
     // await deleteStreamUser(id.toString());
+
+    return { success: true, deletedUserId: id };
   }
 );
 
